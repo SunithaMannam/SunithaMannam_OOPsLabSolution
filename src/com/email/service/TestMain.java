@@ -57,7 +57,9 @@ public class TestMain {
 
 			// retrieve data integer from the user
 			deptCode = scanner.nextInt();
-			System.out.println("Invalid department Code entered!! Try again !!");
+			if(deptCode > 4 || deptCode <= 0){
+				System.out.println("Invalid department Code entered!! Try again !!");	
+			}			
 			
 		} while ((deptCode > 4 || deptCode <= 0));
 		//
