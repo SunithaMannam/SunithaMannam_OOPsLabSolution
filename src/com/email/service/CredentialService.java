@@ -45,7 +45,7 @@ public class CredentialService {
 				+ emp.getFirstName().substring(0,1).toUpperCase() 
 				+ emp.getFirstName().substring(1).toLowerCase() 
 				+ " your generated credentials are as follows: \n";
-		resStr += "Email        --->  " + generateEmailAddress(emp) + "\n";
+		resStr += "Email        --->  " +  emp.getEmailId() + "\n";
 		resStr += "Password ---> " + emp.getPassword();
 		System.out.println(resStr);
 	}

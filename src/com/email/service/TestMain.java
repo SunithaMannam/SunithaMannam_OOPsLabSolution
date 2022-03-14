@@ -64,7 +64,8 @@ public class TestMain {
 		// create customer and check credentials 
 		Employee emp = new Employee(firstName, secondName);
 		emp.setDept(getDeptName(deptCode));
-
+		emp.setEmailId(CredentialService.generateEmailAddress(emp));
+		
 		// Generate the password
 		emp.setPassword(CredentialService.generatePassword());
 		CredentialService.showCredentials(emp);

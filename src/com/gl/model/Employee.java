@@ -6,6 +6,7 @@ public class Employee {
 	private String secondName = null;
 	private String dept = null;	
 	private String password =null;
+	private String emailId = null;
 	
 	public Employee(String firstName,String secondName) {
 		this.firstName = firstName;
@@ -38,6 +39,14 @@ public class Employee {
 	}
 	public void setDept(String dept) {
 		this.dept = dept;
+	}
+
+	public String getEmailId() {
+		return emailId;
+	}
+
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
 	}
 	
 	
